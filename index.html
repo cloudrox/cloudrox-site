@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CloudRox | Salesforce Consultant</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudRox Freelance HQ</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="logo">
-        <a href="#">CloudRox</a>
-      </div>
-      <nav class="site-nav">
-        <ul>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">CloudRox</div>
+      <nav>
+        <ul class="nav-links">
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -22,62 +24,69 @@
     </div>
   </header>
 
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="container hero-content">
-      <h1>Your Salesforce Specialist & Consultant</h1>
-      <p>Helping businesses optimize their Salesforce platform, integrations, and workflows.</p>
+      <h1>Salesforce Consulting for Growing Teams</h1>
+      <p>Helping businesses automate, scale, and grow with tailored Salesforce solutions.</p>
       <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </section>
 
-  <section id="services" class="section services">
+  <!-- SERVICES -->
+  <section id="services" class="section">
     <div class="container">
       <h2>Services</h2>
       <div class="services-grid">
-        <div class="service-item">
-          <h3>Consulting</h3>
-          <p>Expert analysis, architecture, and strategy.</p>
+        <div class="card">
+          <h3>Salesforce Setup</h3>
+          <p>Custom implementations and configurations to fit your business needs.</p>
         </div>
-        <div class="service-item">
-          <h3>Implementation</h3>
-          <p>Custom setups, automations, integrations.</p>
+        <div class="card">
+          <h3>Automation</h3>
+          <p>Streamline processes with Flows, integrations, and smart workflows.</p>
         </div>
-        <div class="service-item">
+        <div class="card">
           <h3>Support & Training</h3>
-          <p>Ongoing help and training for your team.</p>
+          <p>Hands-on help and training so your team gets the most from Salesforce.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section about">
+  <!-- ABOUT -->
+  <section id="about" class="section alt-bg">
     <div class="container">
       <h2>About Me</h2>
-      <p>I’m a certified Salesforce consultant with X years of experience working across industries. My goal is to align tech and business strategy.</p>
+      <p>
+        I’m a certified Salesforce consultant with years of experience helping businesses
+        build scalable, efficient CRM solutions. I focus on practical results and seamless adoption.
+      </p>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
+  <!-- CONTACT -->
+  <section id="contact" class="section">
     <div class="container">
       <h2>Contact</h2>
-      <p>Drop me a message to get started.</p>
-      <form action="#" method="post" class="contact-form">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="How can I help?" required></textarea>
-        <button type="submit" class="btn">Send</button>
+      <p>Let’s talk about how we can work together.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Your message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
   </section>
 
-  <footer class="site-footer">
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
       <p>© <span id="year"></span> CloudRox. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
