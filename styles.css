@@ -55,7 +55,8 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  max-width: 600px;
   font-weight: 800;
   margin-bottom: 20px;
 }
