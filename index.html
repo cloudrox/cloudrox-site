@@ -419,25 +419,48 @@
                         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                             <div class="lg:col-span-2">
                                 <div class="rounded-lg border text-card-foreground shadow-sm p-8 border-border bg-card">
-                                    <form class="space-y-6">
-                                        <div><label
-                                                class="block text-sm font-medium mb-2 text-card-foreground">Name</label><input
-                                                type="text"
-                                                class="flex h-10 w-full rounded-md border border-input px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-background"
-                                                placeholder="Your name" required="" value=""></div>
-                                        <div><label
-                                                class="block text-sm font-medium mb-2 text-card-foreground">Email</label><input
-                                                type="email"
-                                                class="flex h-10 w-full rounded-md border border-input px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-background"
-                                                placeholder="your.email@example.com" required="" value=""></div>
-                                        <div><label
-                                                class="block text-sm font-medium mb-2 text-card-foreground">Message</label><textarea
-                                                class="flex min-h-[80px] w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-background"
-                                                placeholder="Tell me about your project..." rows="6"
-                                                required=""></textarea></div><button
-                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:shadow-hover hover:scale-105 transition-all duration-300 font-semibold h-11 rounded-md px-8 w-full"
-                                            type="submit">Send Message</button>
-                                    </form>
+                             <form action="https://formspree.io/f/mldpapop" method="POST" class="space-y-6">
+  <div>
+    <label class="block text-sm font-medium mb-2 text-card-foreground">Name</label>
+    <input
+      type="text"
+      name="name"
+      class="flex h-10 w-full rounded-md border border-input px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-background"
+      placeholder="Your name"
+      required
+    >
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium mb-2 text-card-foreground">Email</label>
+    <input
+      type="email"
+      name="email"
+      class="flex h-10 w-full rounded-md border border-input px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm bg-background"
+      placeholder="your.email@example.com"
+      required
+    >
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium mb-2 text-card-foreground">Message</label>
+    <textarea
+      name="message"
+      class="flex min-h-[80px] w-full rounded-md border border-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-background"
+      placeholder="Tell me about your project..."
+      rows="6"
+      required
+    ></textarea>
+  </div>
+
+  <button
+    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:shadow-hover hover:scale-105 transition-all duration-300 font-semibold h-11 rounded-md px-8 w-full"
+    type="submit"
+  >
+    Send Message
+  </button>
+</form>
+
                                 </div>
                             </div>
                             <div class="space-y-6">
